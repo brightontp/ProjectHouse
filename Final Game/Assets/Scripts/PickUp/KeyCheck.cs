@@ -7,7 +7,7 @@ public class KeyCheck : MonoBehaviour, IInteractable
     public Pickup script;
     public bool clicked;
     public GameObject neededObject;
-
+    private AudioSource s;
     public GameObject pickUp;
 
     private Animator animator;
@@ -20,7 +20,8 @@ public class KeyCheck : MonoBehaviour, IInteractable
     {
         clicked = false;
         animator = otherObject.GetComponent<Animator>();
-        
+        s = otherObject.GetComponent<AudioSource>();
+
 
 
 
@@ -53,7 +54,7 @@ public class KeyCheck : MonoBehaviour, IInteractable
                 if (Input.GetKeyDown("e"))
                 {
                     animator.Play("Door_open");  //plays open door animation if e is pressed and player is withing raydistance of wall
-  
+                    s.Play();
                     clicked = true;
 
                     neededObject.SetActive(false);
