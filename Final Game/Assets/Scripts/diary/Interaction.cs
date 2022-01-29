@@ -32,6 +32,7 @@ public class Interaction : MonoBehaviour, IInteractable
     {
         activate = "on";
         canFlipPan = true;
+
     }
 
     

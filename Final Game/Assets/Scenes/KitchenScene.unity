@@ -2541,7 +2541,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e697683d3154f492a89c1b06fd33539b, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -3151,6 +3151,7 @@ MonoBehaviour:
   script: {fileID: 614203375}
   otherObject: {fileID: 713989738}
   ladel: {fileID: 2032963354}
+  waitTime: 1
 --- !u!1 &802791243
 GameObject:
   m_ObjectHideFlags: 0
@@ -3181,9 +3182,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - clip: {fileID: 8300000, guid: e697683d3154f492a89c1b06fd33539b, type: 3}
+    name: PotCrash
+    volume: 0.312
+    pitch: 0.1
+    source: {fileID: 0}
 --- !u!4 &802791245
 Transform:
   m_ObjectHideFlags: 0
